@@ -1,3 +1,0 @@
-module.exports = {
-  // CONTROLLER FUNCTIONS HERE - MAKE SURE EVERYONE REBASES
-};
