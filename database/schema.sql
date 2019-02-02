@@ -1,12 +1,10 @@
--- DROP DATABASE IF EXISTS ballislife;
-
--- CREATE DATABASE ballislife;
-
--- USE ballislife;
+DROP TABLE IF EXISTS player_data;
 
 CREATE TABLE player_data (
   id SERIAL PRIMARY KEY,
   api_id VARCHAR(255),
+  team_name VARCHAR(255),
+  team_market VARCHAR(255),
   full_name VARCHAR(255),
   first_name VARCHAR(255),
   last_name VARCHAR(255),
