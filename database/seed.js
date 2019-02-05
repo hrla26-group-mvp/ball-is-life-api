@@ -56,7 +56,7 @@ const getTeamData = (i) => {
     params: { api_key: API_KEY },
   })
     .then(({ data }) => {
-      let { name, market, players } = data;
+      const { name, market, players } = data;
       let query = '';
       for (let j = 0; j < players.length; j += 1) {
         players[j].full_name = players[j].full_name.replace(/'/g, '');
@@ -66,9 +66,7 @@ const getTeamData = (i) => {
         query += insert;
       }
       sql += query;
-      setTimeout(() => {
-        getTeamData(i + 1);
-      }, 1000);
+      setTimeout(() => { getTeamData(i + 1); }, 1000);
     })
     .catch((err) => { console.error(err); });
 };

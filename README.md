@@ -1,2 +1,2 @@
 # ball-is-life-api
-API server for ball is life app
+API server and db for ball is life app
